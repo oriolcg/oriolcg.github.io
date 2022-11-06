@@ -299,6 +299,23 @@ $(document).ready(function(){
 		var anim = new TweenLite($(this).closest("li").find(".imageoverlay"),0.2,{left:"-102%"});
 	});
 
+	
+	$("ul.ul-withdetails-gray li").find(".row").on('click',function(){
+		// $this = $(this);
+		$(this).closest("li").find(".details")
+	        .stop(true, true)
+	        .animate({
+	            height:"toggle",
+	            opacity:"toggle"
+	        },300);
+	}).on('mouseenter',function(){
+		$this = $(this);
+		var anim = new TweenLite($(this).closest("li").find(".imageoverlay"),0.4,{left:0});
+	}).on('mouseleave', function(){
+		var anim = new TweenLite($(this).closest("li").find(".imageoverlay"),0.2,{left:"-102%"});
+	});
+	
+
 
 
 	/*++++++++++++++++++++++++++++++++++++

@@ -368,11 +368,9 @@ ul#navigation li .fa {
 }
 
 .section-container .white {
-    position: relative; z-index: 1;
-    top: 0; left: 0; width: 120%; height: 100%;
-    padding: 20px 40px 20px 40px;
-    background: RGB(255,255,255);
-    background: RGBa(255,255,255,0.8); 
+    position: absolute; z-index: 1;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: white; opacity: 0.2;
 }
 
 .color-1 {
@@ -657,7 +655,7 @@ ul.timeline li .data .text {
 
 /* ul-withdetails
  **************************************************/
- .ul-withdetails {
+.ul-withdetails {
 	list-style: none;
 	padding: 0;
 }
@@ -695,7 +693,7 @@ ul.timeline li .data .text {
 	        transition: all 0.3s ease-out;
 }
 
-.ul-withdetails li .imageoverlay i{
+.ul-withdetails li .imageoverlay i {
 	color: #fff;
 	position: absolute;
 	top: 40%;
@@ -703,76 +701,13 @@ ul.timeline li .data .text {
 	font-size: 30px;
 }
 
-.ul-withdetails .ul-withdetails-gray li .meta{
+.ul-withdetails li .meta {
 	overflow: hidden;
 	padding:  10px;
 	cursor: pointer;
 }
 
-.ul-withdetails .ul-withdetails-gray li .details {
-	display: none;
-	padding: 20px;
-	background: #fff;
-
-	-webkit-box-shadow: inset 0px 3px 5px -3px #ccc;
-	box-shadow: inset 0px 3px 5px -3px #ccc;
-}
-
-/* ul-withdetails-gray
- **************************************************/
-.ul-withdetails-gray {
-	list-style: none;
-	padding: 0;
-}
-
-.ul-withdetails-gray li {
-	background-color:  #BBBBBB !important;
-	margin-bottom: 15px;
-
-	-webkit-box-shadow: 0px 3px 3px -3px #ccc;
-	box-shadow: 0px 3px 3px -3px #ccc;
-	border-radius: 3px;
-}
-
-.ul-withdetails-gray li .image {
-	position: relative;
-	overflow: hidden;
-}
-
-.ul-withdetails-gray li .imageoverlay {
-	position: absolute;
-	top: 0;
-	left: -100%;
-	width: 100%;
-	height: 100%;
-	/*background: #03cc85;*/
-	cursor: pointer;
-	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
-	filter: alpha(opacity=70);
-	opacity: 0.7;
-
-	-webkit-transition: all 0.3s ease-out;
-	   -moz-transition: all 0.3s ease-out;
-	    -ms-transition: all 0.3s ease-out;
-	     -o-transition: all 0.3s ease-out;
-	        transition: all 0.3s ease-out;
-}
-
-.ul-withdetails-gray li .imageoverlay i {
-	color: #fff;
-	position: absolute;
-	top: 40%;
-	left: 45%;
-	font-size: 30px;
-}
-
-.ul-withdetails-gray li .meta {
-	overflow: hidden;
-	padding:  10px;
-	cursor: pointer;
-}
-
-.ul-withdetails-gray li .details {
+.ul-withdetails li .details {
 	display: none;
 	padding: 20px;
 	background: #fff;
@@ -998,14 +933,14 @@ ul.timeline li .data .text {
 /* home
  **************************************************/
  .home .pageheader{
-	background-image: url(../img/home2.jpg);
+	background-image: url(../img/home.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	padding: 180px 10%;
 }
 .home .pageheader .title{
-    border: none;
+	border: none;
 }
 .home .fixedbg.parallax{
 	background: #fff url('../img/home-parallaxbg.jpg');
@@ -1279,7 +1214,7 @@ ul.grid li a,ul.grid li img {
 /* research
  **************************************************/
 #research .pageheader{
-	background-image: url(../img/research.png);
+	background-image: url(../img/research.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1294,7 +1229,7 @@ ul.grid li a,ul.grid li img {
 /* projects
  **************************************************/
 #projects .pageheader{
-	background-image: url(../img/meeting.jpg);
+	background-image: url(../img/projects.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -1309,7 +1244,7 @@ ul.grid li a,ul.grid li img {
 /* contact
  **************************************************/
 #contact .pageheader{
-	background-image: url(../img/contact-office_edited.jpg);
+	background-image: url(../img/contact.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
